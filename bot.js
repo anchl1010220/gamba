@@ -39,10 +39,10 @@ client.on('message', message => {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
-	if (talkedRecently.has(message.author.id))
+	if (talkedRecently.has(message.author.id)) {
 		message.reply('There's a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
   		return;
-        
+	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
             if (rand <= 14) {
