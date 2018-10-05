@@ -17,10 +17,11 @@ var outcome;
 
 client.on('ready', () => {
     console.log('I am ready!');
+	console.user.setGame('Shikon no Tama');
 });
 
 bot.on('ready', () => {
-  bot.user.setGame('Sacred Jewel')
+  bot.user.setGame('Shikon no Tama')
 })
 
 client.on('message', message => {
