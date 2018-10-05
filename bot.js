@@ -19,6 +19,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+bot.on('ready', () => {
+  bot.user.setGame('Sacred Jewel')
+})
+
 client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
