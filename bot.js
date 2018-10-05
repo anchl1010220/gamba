@@ -17,7 +17,8 @@ var outcome;
 
 client.on('ready', () => {
     	console.log('I am ready!');
-	client.user.setGame('Shikon no Tama');
+	// client.user.setGame('Shikon no Tama');
+	client.user.setActivity('Shikon no Tama', { type: 'PLAYING' });
 });
 
 client.on('message', message => {
