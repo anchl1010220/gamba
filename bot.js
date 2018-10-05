@@ -40,6 +40,7 @@ client.on('message', message => {
         // var array1 = [...Array(100).keys()];
 	    
 	if (talkedRecently.has(message.author.id))
+		message.reply('There's a 5 second cooldown between gambas. <:AYAYA:497706450458509312>')
   		return;
         
         for (i=0; i<9; i++) {
@@ -72,7 +73,7 @@ client.on('message', message => {
     	
 		talkedRecently.add(message.author.id);
 		setTimeout(() => {
-  		// Removes the user from the set after 2.5 seconds
+  		// Removes the user from the set after 5 seconds
   			talkedRecently.delete(message.author.id);
 			}, 5000);
     	}
