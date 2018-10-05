@@ -19,7 +19,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
-    }
+    	}
     if (message.content === '!weeb') {
     	// message.reply('${ayayay}');
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
@@ -32,7 +32,7 @@ client.on('message', message => {
         // const x = client.emojis.get("497706450458509312");
         // const y = client.emojis.find("name", "ayayay");  
         message.react("497706450458509312")
-    }
+    	}
     if (message.content === '!gamba') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
@@ -62,7 +62,7 @@ client.on('message', message => {
             } else 
             	x[i]="<:eggy:497675280891248671>";
             }
-        message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n x[1] : x[2] : x[3] \n  \n ${r1o2} : ${r2o2} : ${r3o2} ◀◀◀ \n \n ${r1o3} : ${r2o3} : ${r3o3} \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
+        message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n x[1] : x[2] : x[3] \n  \n x[4] : x[5] : x[6] ◀◀◀ \n \n x[7] : x[8] : x[9] \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
     }
 });
 
