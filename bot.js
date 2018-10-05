@@ -12,15 +12,16 @@ client.on('message', message => {
         message.channel.send(emojiList);
   	}
     if (message.content === '!help'|message.content === '!command'|message.content === '!commands') {
-        // const x = client.emojis.get("497706450458509312");
-        // const y = client.emojis.find("name", "ayayay");   
-    	message.reply('SEND HELP ~ TRY !gamba');
+    	message.reply('SEND HELP <:buh:445414053850906625> TRY !gamba');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
+        // const x = client.emojis.get("497706450458509312");
+        // const y = client.emojis.find("name", "ayayay");  
         message.react("497706450458509312")
     }
     if (message.content === '!gamba') {
-        message.channel.send('[ <:shinobu:497699520843350026> WEEB SLOTS <:shinobu:497699520843350026> ] \n ------------------ \n r1o1 : r2o1 : r3o1 \n  \n r1o2 : r2o2 : r3o2 ◀◀◀ \n \n r1o3 : r2o3 : r3o3 \n ------------------ \n | : : :  ALWAYS LOSE OMGEALUL  : : : | \n message.member.id used X credits and EVENT.');   
+        const user = message.member.id;
+        message.channel.send('[ <:shinobu:497699520843350026> WEEB SLOTS <:shinobu:497699520843350026> ] \n ------------------ \n r1o1 : r2o1 : r3o1 \n  \n r1o2 : r2o2 : r3o2 ◀◀◀ \n \n r1o3 : r2o3 : r3o3 \n ------------------ \n | : : :  ALWAYS LOSE OMGEALUL  : : : | \n ${user} used X credits and EVENT.');   
     }
 });
 
