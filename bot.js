@@ -13,7 +13,7 @@ client.on('message', message => {
   	}
     if (message.content === '!help'|message.content === '!command'|message.content === '!commands') {
         const ayayay = client.emojis.get("497706450458509312");
-    	message.reply('SEND HELP ~ TRY !weeb ${ayayay}');
+    	message.reply('SEND HELP ~ TRY !weeb ${ayayay} x');
   	}
 });
 
