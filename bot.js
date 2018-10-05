@@ -40,7 +40,7 @@ client.on('message', message => {
         // var array1 = [...Array(100).keys()];
 	    
 	if (talkedRecently.has(message.author.id)) {
-		message.reply('There's a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
+		message.reply('There\'s a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
   		return;
 	      }
         for (i=0; i<9; i++) {
