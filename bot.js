@@ -1,11 +1,19 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const responseObject = { // https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/message-reply-array.html
+    "ping": "pong",
+    "pong": "wrong"
+};
+
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
 client.on('message', message => {
+    if (responseObject[message.content]) {
+        message.channel.send(responseObject[message.content]); // Line 4
+    }
     if (message.content === '!weeb') {
     	// message.reply('${ayayay}');
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
