@@ -13,6 +13,9 @@ client.on('message', message => {
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
   	}
+    if (message.content === '!help'|message.content === '!command'|message.content === '!commands') {
+    	message.reply('SEND HELP ~ TRY !weeb');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
