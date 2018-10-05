@@ -16,7 +16,7 @@ client.on('message', message => {
         // const y = client.emojis.find("name", "ayayay");   
     	message.reply('SEND HELP ~ TRY !weeb');
   	}
-    if (message.content === ':AYAYAY:') {
+    if (message.content === '<:AYAYA:497706450458509312>') {
         message.react("497706450458509312")
     }
 });
