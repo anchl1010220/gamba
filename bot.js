@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     if (message.content === '!gamba') {
         const user = message.member.id;
-        message.channel.send('[ <:shinobu:497699520843350026> WEEB SLOTS <:shinobu:497699520843350026> ] \n ------------------ \n r1o1 : r2o1 : r3o1 \n  \n r1o2 : r2o2 : r3o2 ◀◀◀ \n \n r1o3 : r2o3 : r3o3 \n ------------------ \n | : : :  ALWAYS LOSE OMGEALUL  : : : | \n ${user} used X credits and EVENT.');   
+        message.channel.send('[ <:shinobu:497699520843350026> WEEB SLOTS <:shinobu:497699520843350026> ] \n ------------------ \n ${r1o1} : ${r2o1} : ${r3o1} \n  \n ${r1o2} : ${r2o2} : ${r3o2} ◀◀◀ \n \n ${r1o3} : ${r2o3} : ${r3o3} \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credits and ${total}.');   
     }
 });
 
