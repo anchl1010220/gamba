@@ -20,15 +20,7 @@ client.on('message', message => {
         message.react("497706450458509312")
     }
     if (message.content === '!gamba') {
-        message.channel.send('[ <:shinobu:497699520843350026> WEEB SLOTS <:shinobu:497699520843350026> ] \n 
-                             Line 2 \n 
-                             Line 3 \n 
-                             Line 4 \n 
-                             Line 5 \n 
-                             Line 6 \n 
-                             Line 7 \n 
-                             Line 8 \n 
-                             Line 9');   
+        message.channel.send('[ <:shinobu:497699520843350026> WEEB SLOTS <:shinobu:497699520843350026> ] \n Line 2 \n Line 3 \n Line 4 \n Line 5 \n Line 6 \n Line 7 \n Line 8 \n Line 9');   
     }
 });
 
