@@ -62,8 +62,8 @@ client.on('message', message => {
             } else 
             	x[i]="<:eggy:497675280891248671>";
             }
-        message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n ' + x[1] + ' : ' + x[2] + ' :  x[3] \n  \n x[4] : x[5] : x[6] ◀◀◀ \n \n x[7] : x[8] : x[9] \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
-	// message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀◀◀ \n \n' + x[7] ' : ' + x[8] + ' : ' + x[9] + '\n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');       
+        // message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n ' + x[1] + ' : ' + x[2] + ' :  x[3] \n  \n x[4] : x[5] : x[6] ◀◀◀ \n \n x[7] : x[8] : x[9] \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
+	message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + ' \n  \n ' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀◀◀ \n \n ' + x[7] + ' : ' + x[8] + ' : ' + x[9] + '\n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');       
     }
 });
 
