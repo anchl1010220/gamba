@@ -23,20 +23,20 @@ client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
     	}
-    if (message.content === '!weeb') {
+    if (message.content === 'weeb!list') {
     	// message.reply('${ayayay}');
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
   	}
-    if (message.content === '!help'|message.content === '!command'|message.content === '!commands') {
-    	message.reply('SEND HELP <:buh:445414053850906625> TRY !gamba');
+    if (message.content === 'weeb!help'|message.content === 'weeb!command'|message.content === 'weeb!commands') {
+    	message.reply('SEND HELP <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
         // const y = client.emojis.find("name", "ayayay");  
         message.react("497706450458509312")
     	}
-    if (message.content === '!gamba') {
+    if (message.content === 'weeb!gamba') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
