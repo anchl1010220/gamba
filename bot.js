@@ -26,7 +26,7 @@ client.on('message', message => {
         message.channel.send(emojiList);
   	}
     if (message.content === '!help'|message.content === '!command'|message.content === '!commands') {
-    	message.reply('SEND HELP <:buh:445414053850906625> TRY !gamba');
+    	message.reply('SEND HELP <:buh:445414053850906625> TRY !gamba' + 'test');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
@@ -62,7 +62,7 @@ client.on('message', message => {
             } else 
             	x[i]="<:eggy:497675280891248671>";
             }
-        message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n console.log(x[1]) : x[2] : x[3] \n  \n x[4] : x[5] : x[6] ◀◀◀ \n \n x[7] : x[8] : x[9] \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
+        message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n x[1] : x[2] : x[3] \n  \n x[4] : x[5] : x[6] ◀◀◀ \n \n x[7] : x[8] : x[9] \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
     }
 });
 
