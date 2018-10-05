@@ -29,7 +29,7 @@ client.on('message', message => {
         message.channel.send(emojiList);
   	}
     if (message.content === 'weeb!help'|message.content === 'weeb!command'|message.content === 'weeb!commands') {
-    	message.reply('SEND HELP <:buh:445414053850906625> TRY weeb!gamba');
+    	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
