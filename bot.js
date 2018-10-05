@@ -20,6 +20,10 @@ client.on('ready', () => {
 	client.user.setGame('Shikon no Tama');
 });
 
+bot.on('ready', () => {
+  bot.user.setGame('GAME HERE')
+})
+
 client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
