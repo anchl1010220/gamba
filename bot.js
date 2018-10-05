@@ -71,11 +71,9 @@ client.on('message', message => {
            
 		message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀ Get 3 in a row here to win! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + '\n ------------------ \n | : : :  ${outcome}  : : : |');       
     	
+	    	// command cooldown
 		talkedRecently.add(message.author.id);
-		setTimeout(() => {
-  		// Removes the user from the set after 5 seconds
-  			talkedRecently.delete(message.author.id);
-			}, 5000);
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
     	}
 });
 
