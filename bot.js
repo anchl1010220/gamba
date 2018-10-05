@@ -17,7 +17,7 @@ var outcome;
 
 client.on('ready', () => {
     	console.log('I am ready!');
-	client.user.setPresence({ game: { name: 'Shikon no Tama', type:3 }, status: 'busy'});
+	client.user.setPresence({ game: { name: 'Shikon no Tama', type:3 }});
 });
 
 client.on('message', message => {
@@ -29,7 +29,7 @@ client.on('message', message => {
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
   	}
-    if (message.content === 'weeb!help'|message.content === 'weeb!command'|message.content === 'weeb!commands') {
+    if (message.content === 'weeb!help'|message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === '!gamba') {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
