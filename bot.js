@@ -18,7 +18,8 @@ var outcome;
 client.on('ready', () => {
     	console.log('I am ready!');
 	// client.user.setGame('Shikon no Tama');
-	client.user.setActivity('Shikon no Tama', { type: 'PLAYING' });
+	// client.user.setActivity('Shikon no Tama', { type: 'PLAYING' });
+	client.user.setPresence({ game: { name: 'Shikon no Tama', type: "watching", url: "https://www.twitch.tv/danboorubox"}});
 });
 
 client.on('message', message => {
