@@ -15,14 +15,11 @@ var outcome;
 
 // k
 
+client.user.setGame('Shikon no Tama');
+
 client.on('ready', () => {
     	console.log('I am ready!');
-	client.user.setGame('Shikon no Tama');
 });
-
-bot.on('ready', () => {
-  bot.user.setGame('GAME HERE')
-})
 
 client.on('message', message => {
     if (responseObject[message.content]) {
