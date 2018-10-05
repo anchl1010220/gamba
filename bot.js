@@ -17,6 +17,7 @@ var outcome;
 
 client.on('ready', () => {
     	console.log('I am ready!');
+	client.user.setPresence({ game: { name: 'Shikon no Tama', type: 3, url: "https://www.youtube.com/watch?v=qXsZKEiQhBE" }});
 });
 
 client.on('message', message => {
@@ -84,8 +85,6 @@ client.on('message', message => {
 		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
     	}
 });
-
-client.user.setPresence({ game: { name: 'Shikon no Tama', type: 3 }});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
