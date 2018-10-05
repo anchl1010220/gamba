@@ -17,7 +17,7 @@ client.on('message', message => {
     if (message.content === 'AYAYAY') {
         const x = client.emojis.get("497706450458509312");
         const y = client.emojis.find("name", "ayayay");   
-        message.channel.send(${x} ${y});
+        message.channel.send(${x});
     }
 });
 
