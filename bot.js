@@ -16,8 +16,8 @@ var outcome;
 // k
 
 client.on('ready', () => {
-    console.log('I am ready!');
-	console.user.setGame('Shikon no Tama');
+    	console.log('I am ready!');
+	client.user.setGame('Shikon no Tama');
 });
 
 client.on('message', message => {
