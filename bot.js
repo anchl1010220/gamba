@@ -46,7 +46,7 @@ client.on('message', message => {
 	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
-            if (rand <= 14) {
+            if (rand <= 100) {
 	            x[i]="<:bu1:497643990758457354>";
             } else if (15 <= rand && rand <= 29) {
 	            x[i]="<:bu2:497643986815680522>";
