@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const talkedRecently = new Set();
+
 const responseObject = { // https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/message-reply-array.html
     "ping": "pong",
 };
@@ -36,6 +38,9 @@ client.on('message', message => {
     if (message.content === '!gamba') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
+	    
+	if (talkedRecently.has(message.author.id))
+  		return;
         
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
@@ -63,8 +68,14 @@ client.on('message', message => {
             	x[i]="<:eggy:497675280891248671>";
             }
            
-	message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀ Get 3 in a row here to win! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + '\n ------------------ \n | : : :  ${outcome}  : : : |');       
-    }
+		message.channel.send(' <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650>  \n ------------------ \n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀ Get 3 in a row here to win! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + '\n ------------------ \n | : : :  ${outcome}  : : : |');       
+    	
+		talkedRecently.add(message.author.id);
+		setTimeout(() => {
+  		// Removes the user from the set after 2.5 seconds
+  			talkedRecently.delete(message.author.id);
+			}, 5000);
+    	}
 });
 
 // THIS  MUST  BE  THIS  WAY
