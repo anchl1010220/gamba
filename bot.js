@@ -12,13 +12,10 @@ client.on('message', message => {
         message.channel.send(emojiList);
   	}
     if (message.content === '!help'|message.content === '!command'|message.content === '!commands') {
+        // const x = client.emojis.get("497706450458509312");
+        // const y = client.emojis.find("name", "ayayay");   
     	message.reply('SEND HELP ~ TRY !weeb');
   	}
-    if (message.content === 'AYAYAY') {
-        const x = client.emojis.get("497706450458509312");
-        const y = client.emojis.find("name", "ayayay");   
-        message.channel.send(${x});
-    }
 });
 
 // THIS  MUST  BE  THIS  WAY
