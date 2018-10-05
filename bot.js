@@ -20,7 +20,7 @@ client.on('message', message => {
         message.react("497706450458509312")
     }
     if (message.content === '!gamba') {
-        message.reply('Line 1'\n'Line 2');   
+        message.reply('Line 1 \n Line 2');   
     }
 });
 
