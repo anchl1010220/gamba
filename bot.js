@@ -28,6 +28,7 @@ client.on('message', message => {
     }
     if (message.content === '!gamba') {
         // const user = message.member.id;
+        // var array1 = [...Array(100).keys()];
         message.channel.send('[ <:2ba:497731536649584650> WEEB SLOTS <:2ba:497731536649584650> ] \n ------------------ \n ${r1o1} : ${r2o1} : ${r3o1} \n  \n ${r1o2} : ${r2o2} : ${r3o2} ◀◀◀ \n \n ${r1o3} : ${r2o3} : ${r3o3} \n ------------------ \n | : : :  ${outcome}  : : : | \n ${user} used ${cred} credit(s) and ${total}.');   
     }
 });
