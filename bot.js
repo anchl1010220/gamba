@@ -9,7 +9,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!weeb') {
-    	message.reply('${ayayay}');
+    	// message.reply('${ayayay}');
+        const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
+        message.channel.send(emojiList);
   	}
 });
 
