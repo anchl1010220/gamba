@@ -17,7 +17,7 @@ var outcome;
 
 client.on('ready', () => {
     	console.log('I am ready!');
-	client.user.setPresence({ game: { name: 'Shikon no Tama', type:3 }});
+	client.user.setPresence({ game: { name: 'Shikon no Tama', type:3 }, status: 'busy'});
 });
 
 client.on('message', message => {
