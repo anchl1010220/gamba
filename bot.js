@@ -19,7 +19,7 @@ client.on('ready', () => {
     	console.log('I am ready!');
 	// client.user.setGame('Shikon no Tama');
 	// client.user.setActivity('Shikon no Tama', { type: 'PLAYING' });
-	client.user.setPresence({ game: { name: 'Shikon no Tama', type: "watching", url:}});
+	client.user.setPresence({ game: { name: 'Shikon no Tama', type: "watching", url:"https://www.youtube.com/watch?v=qXsZKEiQhBE"}});
 });
 
 client.on('message', message => {
