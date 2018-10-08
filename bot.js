@@ -26,7 +26,7 @@ client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
     	}
-    if (message.content === 'weeb!weeb' && message.member.roles.find("name", "me") {
+    if (message.content === 'weeb!weeb') {
     	// admin check
         message.channel.send('1');
   	}
