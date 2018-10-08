@@ -46,7 +46,7 @@ client.on('message', message => {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
-	if (talkedRecently.has(message.author.id)) {
+	if (talkedRecently.has(message.author.id) && !message.member.roles.find("name", "me") {
 		message.reply('There\'s a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
   		return;
 	      }
