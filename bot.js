@@ -35,10 +35,11 @@ client.on("guildDelete", guild => {
 client.on('message', message => {
 	if(message.author.bot) return;
 	
-		  if(message.content === 'ping') {  // https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
+	if(message.content === 'ping') {  // https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
+		const m;
     	// Calculates ping between sending a message and editing it, giving a nice round-trip latency.
    	 // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
-	 message.reply('Pong! Latency is ' + (m.createdTimestamp - message.createdTimestamp) + 'ms. API Latency is ' + Math.round(client.ping) + 'ms');
+	 	message.reply('Pong! Latency is ' + (m.createdTimestamp - message.createdTimestamp) + 'ms. API Latency is ' + Math.round(client.ping) + 'ms');
  	 }
 
 
