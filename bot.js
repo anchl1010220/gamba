@@ -34,7 +34,7 @@ client.on('message', message => {
     if (message.content === 'weeb!help'|message.content === '!gamba'|message.content === 'w!help') {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
-    if (message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === 'w!commands'|message.content === 'w!commands') {
+    if (message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === 'w!command'|message.content === 'w!commands') {
     	message.reply('Try these: **weeb![ list | help | gamba ]**');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
