@@ -52,7 +52,7 @@ client.on('message', message => {
         // var array1 = [...Array(100).keys()];
 	    
 	if (talkedRecently.has(message.author.id)) {
-		message.reply('There\'s a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
+		message.reply('There\'s a 4 second cooldown inbetween gambas. <:AYAYA:497706450458509312>');
   		return;
 	      }
         for (i=0; i<9; i++) {
@@ -92,7 +92,7 @@ client.on('message', message => {
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
-		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 5 sec cd
     	}
 	
 	if (message.content === 'weeb!gamba easy'|message.content === 'w!g ez') {
@@ -100,7 +100,7 @@ client.on('message', message => {
         // var array1 = [...Array(100).keys()];
 	    
 		if (talkedRecently.has(message.author.id)) {
-			message.reply('There\'s a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
+			message.reply('There\'s a 4 second cooldown inbetween gambas. <:AYAYA:497706450458509312>');
   			return;
 	      }
         for (i=0; i<9; i++) {
@@ -127,7 +127,7 @@ client.on('message', message => {
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
-		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd (5000ms)
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 5 sec cd (5000ms)
     	}
 });
 
