@@ -14,7 +14,6 @@ var x = new Array();
 var i;
 var rand;
 var outcome;
-var weeb=0;
 
 // k 
 
@@ -29,8 +28,11 @@ client.on('message', message => {
     	}
     if (message.content === 'weeb!weeb') {
     	// retard check
-	weeb++;
-        message.channel.send('1');
+	    if(message.member.roles.find("name", "me") {
+       		 message.channel.send('1');
+    		} else {
+		 message.channel.send('2');
+		}
   	}
     if (message.content === '') {
     	// message.reply('${ayayay}');
