@@ -21,25 +21,12 @@ client.on('ready', () => {
 	client.user.setPresence({ game: { name: 'Shikon no Tama', type:3 }});
 });
 
-client.on("guildCreate", guild => {
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(`Serving ${client.guilds.size} servers`);
-});
-
-client.on("guildDelete", guild => {
-  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`Serving ${client.guilds.size} servers`);
-});
-
-
 client.on('message', message => {
 	if(message.author.bot) return;
 	
 	if(message.content === 'ping') {  // https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
 	 	message.reply(Math.round(client.ping) + ' ms');
  	 }
-
-
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 6, check responseObject
     	}
@@ -62,7 +49,7 @@ client.on('message', message => {
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
         // const y = client.emojis.find("name", "ayayay");  
-        message.react("497706450458509312")
+        message.react("499001156446453791")
     	}
     if (message.content === 'weeb!gamba'|message.content === 'w!g'|message.content === 'w!gamba') {
         // const user = message.member.id;
