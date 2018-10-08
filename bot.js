@@ -40,7 +40,7 @@ client.on('message', message => {
         // const y = client.emojis.find("name", "ayayay");  
         message.react("497706450458509312")
     	}
-    if (message.content === 'weeb!gamba') {
+    if (message.content === 'weeb!gamba'|message.content === 'w!g') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
@@ -88,7 +88,7 @@ client.on('message', message => {
 		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
     	}
 	
-	if (message.content === 'weeb!gamba easy') {
+	if (message.content === 'weeb!gamba easy'|message.content === 'w!g ez') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
