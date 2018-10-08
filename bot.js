@@ -14,6 +14,7 @@ var x = new Array();
 var i;
 var rand;
 var outcome;
+var weeb=0;
 
 // k 
 
@@ -27,7 +28,8 @@ client.on('message', message => {
         message.channel.send(responseObject[message.content]); // Line 4
     	}
     if (message.content === 'weeb!weeb') {
-    	// admin check
+    	// retard check
+	weeb++;
         message.channel.send('1');
   	}
     if (message.content === '') {
