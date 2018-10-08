@@ -31,7 +31,7 @@ client.on('message', message => {
 	//message.member.roles.find("name", "admin");
        	message.channel.send('<:monikaS:498832686228439061>');
   	}
-    if (message.content === 'weeb!list'|message.content === 'w!list) {
+    if (message.content === 'weeb!list'|message.content === 'w!list') {
     	// message.reply('${ayayay}');
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
