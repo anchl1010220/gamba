@@ -33,7 +33,7 @@ client.on('message', message => {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === 'weeb!command'|message.content === 'weeb!commands') {
-    	message.reply('Try these: weeb![list|help|gamba]');
+    	message.reply('Try these: **weeb![ list | help | gamba ]**');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
@@ -88,7 +88,40 @@ client.on('message', message => {
 		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
     	}
 	
-
+	if (message.content === 'weeb!gamba easy') {
+        // const user = message.member.id;
+        // var array1 = [...Array(100).keys()];
+	    
+		if (talkedRecently.has(message.author.id)) {
+			message.reply('There\'s a 5 second cooldown between gambas. <:AYAYA:497706450458509312>');
+  			return;
+	      }
+        for (i=0; i<9; i++) {
+            rand = array1[Math.floor(Math.random() * array1.length)];
+            if (rand <= 19) {
+	            x[i]="<:bu1:497643990758457354>";
+            } else if (20 <= rand && rand <= 39) {
+	            x[i]="<:bu2:497643986815680522>";
+            } else if (40 <= rand && rand <=59) {
+	            x[i]="<:bu3:497643988946386947>";
+            } else if (60 <= rand && rand <= 79) {
+            	x[i]="<:bu4:497643986782257153>";
+            } else if (80 <= rand && rand <= 99) {
+	            x[i]="<:bu5:497643988212252675>";
+            } 
+	    }
+	if (x[4] === x[5] && x[5] === x[6]) {
+ 	 	outcome = "<:lala2:497870765937655828>**W O W**<:lala1:497870766067417088> ";
+	} else {
+		outcome = "<:aqua1:497870765627015179>**LOSER!**<:mim1:497870765962559498>"; 
+	}
+           
+		message.channel.send('<:2ba:497731536649584650>***WEEBS***<:2ba:497731536649584650>\n-----------------\n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀ Get 3 in a row here to win! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + '\n-----------------\n' +  outcome);       
+    	
+	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
+		talkedRecently.add(message.author.id);
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
+    	}
 });
 
 // THIS  MUST  BE  THIS  WAY
