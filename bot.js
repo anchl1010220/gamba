@@ -35,14 +35,14 @@ client.on('message', message => {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === 'w!command'|message.content === 'w!commands') {
-    	message.reply('Try these: **weeb![ list | help | gamba ]**');
+    	message.reply('Try these: **weeb![ gamba | help | list ]**');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
         // const y = client.emojis.find("name", "ayayay");  
         message.react("497706450458509312")
     	}
-    if (message.content === 'weeb!gamba'|message.content === 'w!g') {
+    if (message.content === 'weeb!gamba'|message.content === 'w!g'|message.content === 'w!gamba') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
