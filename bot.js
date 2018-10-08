@@ -29,7 +29,7 @@ client.on('message', message => {
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
   	}
-    if (message.content === 'weeb!help'|message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === '!gamba') {
+    if (message.content === 'weeb!help'|message.content === '!gamba') {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === 'weeb!command'|message.content === 'weeb!commands') {
