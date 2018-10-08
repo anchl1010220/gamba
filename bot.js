@@ -110,13 +110,13 @@ client.on('message', message => {
 	            x[i]="<:bu5:497643988212252675>";
             } 
 	    }
-	if (x[4] === x[5] && x[5] === x[6]) {
+	if (x[1] === x[2] && x[2] === x[3]|x[4] === x[5] && x[5] === x[6]|x[7] === x[8] && x[8] === x[9]) {
  	 	outcome = "<:lala2:497870765937655828>**W O W**<:lala1:497870766067417088> ";
 	} else {
 		outcome = "<:aqua1:497870765627015179>**LOSER!**<:mim1:497870765962559498>"; 
 	}
            
-		message.channel.send('<:2ba:497731536649584650>***WEEBS***<:2ba:497731536649584650>\n-----------------\n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀ Get 3 in a row here to win! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + '\n-----------------\n' +  outcome);       
+		message.channel.send('<:2ba:497731536649584650>***WEEBS***<:2ba:497731536649584650>\n-----------------\n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + ' ◀\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' ◀ Get 3 in a row to win! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + ' ◀\n-----------------\n' +  outcome);       
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
