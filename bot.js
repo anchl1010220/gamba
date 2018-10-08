@@ -24,7 +24,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (responseObject[message.content]) {
-        message.channel.send(responseObject[message.content]); // Line 4
+        message.channel.send(responseObject[message.content]); // Line 6, check responseObject
     	}
     if (message.content === 'weeb!weeb') {
     	// retard check
