@@ -29,7 +29,7 @@ client.on('message', message => {
     if (message.content === 'weeb!weeb') {
     	// retard check
 	//message.member.roles.find("name", "admin");
-       	message.channel.send('1');
+       	message.channel.send('<:monikaS:498832686228439061>');
   	}
     if (message.content === '') {
     	// message.reply('${ayayay}');
@@ -85,7 +85,7 @@ client.on('message', message => {
 	if (x[3] === x[4] && x[4] === x[5]) {
  	 	outcome = "<:lala2:497870765937655828>**WINNER!**<:lala1:497870766067417088> ";
 	} else {
-		outcome = "<:aqua1:497870765627015179>**LOSER!**<:mim1:497870765962559498>"; 
+		outcome = "<:aqua1:497870765627015179>**LOSER!**<:aqua2:498832685859602434>"; 
 	}
            
 		message.channel.send('<:2ba:497731536649584650>***WEEBS***<:2ba:497731536649584650>\n-----------------\n' + x[1] + ' : ' + x[2] + ' : ' + x[3] + '\n  \n' + x[4] + ' : ' + x[5] + ' : ' + x[6] + ' - ◀ Match 3 in this row to win FREE Taco Bell™! \n \n' + x[7] + ' : ' + x[8] + ' : ' + x[0] + '\n-----------------\n' +  outcome);       
