@@ -28,10 +28,8 @@ client.on('message', message => {
     	}
     if (message.content === 'weeb!weeb') {
     	// retard check
-	    if(message.member.roles.find("name", "admin") {
-       		 message.channel.send('1');
-    		} else {
-		}
+	//message.member.roles.find("name", "admin");
+       	message.channel.send('1');
   	}
     if (message.content === '') {
     	// message.reply('${ayayay}');
