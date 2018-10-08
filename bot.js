@@ -6,6 +6,7 @@ const talkedRecently = new Set();
 const responseObject = { // https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/message-reply-array.html
     "ping": "pong",
 	"hey": "hey dude, what's up?",
+	"!g": "no",
 };
 
 var array1 = [...Array(100).keys()];
