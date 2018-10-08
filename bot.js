@@ -120,7 +120,7 @@ client.on('message', message => {
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
-		setTimeout(() => { talkedRecently.delete(message.author.id); }, 5000); // 5 sec cd
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 50); // 5 sec cd (5000ms)
     	}
 });
 
