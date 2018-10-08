@@ -32,7 +32,7 @@ client.on("guildDelete", guild => {
   client.user.setActivity(`Serving ${client.guilds.size} servers`);
 });
 
-client.on("message", async message => {
+client.on("message", async message => { // https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
 	if(message.author.bot) return;
 	
 	  if(command === "ping") {
