@@ -5,6 +5,7 @@ const talkedRecently = new Set();
 
 const responseObject = { // https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/message-reply-array.html
     "ping": "pong",
+	"hey": "hey dude, what's up?",
 };
 
 var array1 = [...Array(100).keys()];
@@ -24,15 +25,15 @@ client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
     	}
-    if (message.content === 'weeb!list') {
+    if (message.content === 'weeb!list'|message.content === 'w!list') {
     	// message.reply('${ayayay}');
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
   	}
-    if (message.content === 'weeb!help'|message.content === '!gamba') {
+    if (message.content === 'weeb!help'|message.content === '!gamba'|message.content === 'w!help') {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
-    if (message.content === 'weeb!command'|message.content === 'weeb!commands') {
+    if (message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === 'w!commands'|message.content === 'w!commands') {
     	message.reply('Try these: **weeb![ list | help | gamba ]**');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
