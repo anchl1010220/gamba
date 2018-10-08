@@ -39,7 +39,7 @@ client.on('message', message => {
 		const m;
     	// Calculates ping between sending a message and editing it, giving a nice round-trip latency.
    	 // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
-	 	message.reply('Pong! Latency is ' + (m.createdTimestamp - message.createdTimestamp) + 'ms. API Latency is ' + Math.round(client.ping) + 'ms');
+	 	message.reply('Pong! Latency is ' + Math.round(client.ping) + 'ms');
  	 }
 
 
