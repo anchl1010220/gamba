@@ -26,7 +26,11 @@ client.on('message', message => {
     if (responseObject[message.content]) {
         message.channel.send(responseObject[message.content]); // Line 4
     	}
-    if (message.content === 'weeb!list'|message.content === 'w!list') {
+    if (message.content === 'weeb!weeb' && message.member.roles.find("name", "me") {
+    	// admin check
+        message.channel.send('1');
+  	}
+    if (message.content === '') {
     	// message.reply('${ayayay}');
         const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
         message.channel.send(emojiList);
