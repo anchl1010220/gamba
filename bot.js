@@ -99,7 +99,7 @@ client.on('message', message => {
 		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 5 sec cd
     	}
 	
-	if (message.content === 'weeb!gamba easy'|message.content === 'w!g ez') {
+	if (message.content === 'weeb!gamba easy'|message.content === 'w!gamba easy'|message.content === 'w!g ez') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
