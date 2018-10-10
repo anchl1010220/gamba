@@ -96,10 +96,11 @@ client.on('message', message => {
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
-		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 5 sec cd
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 4 sec cd
     	}
 	
-	if (message.content === 'weeb!gamba easy'|message.content === 'w!gamba easy'|message.content === 'w!g ez') {
+	// if (message.content === 'weeb!gamba easy'|message.content === 'w!gamba easy'|message.content === 'w!g ez') {
+	if (message.content === 'w!g ez') {
         // const user = message.member.id;
         // var array1 = [...Array(100).keys()];
 	    
@@ -131,7 +132,7 @@ client.on('message', message => {
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
-		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 5 sec cd (5000ms)
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 40); // 4 sec cd (5000ms)
     	}
 	if (message.content === 'weeb!joris'|message.content === 'w!joris')
 	{
