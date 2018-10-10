@@ -109,15 +109,15 @@ client.on('message', message => {
 	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
-            if (rand <= 19) {
+            if (rand <= 31) {
 	            x[i]="<:bu1:497643990758457354>";
-            } else if (20 <= rand && rand <= 39) {
+            } else if (32 <= rand && rand <= 48) {
 	            x[i]="<:bu2:497643986815680522>";
-            } else if (40 <= rand && rand <=59) {
+            } else if (49 <= rand && rand <= 65) {
 	            x[i]="<:bu3:497643988946386947>";
-            } else if (60 <= rand && rand <= 79) {
+            } else if (66 <= rand && rand <= 82) {
             	x[i]="<:bu4:497643986782257153>";
-            } else if (80 <= rand && rand <= 99) {
+            } else if (83 <= rand && rand <= 99) {
 	            x[i]="<:bu5:497643988212252675>";
             } 
 	    }
@@ -133,6 +133,22 @@ client.on('message', message => {
 		talkedRecently.add(message.author.id);
 		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 5 sec cd (5000ms)
     	}
+	if (message.content === 'weeb!gamba joris')
+	{
+		message.channel.send('**P e r c e n t ? **\n
+					<:bu1:497643990758457354> -> 15(32)\n
+					<:bu2:497643986815680522> -> 15 (17)\n
+					<:bu3:497643988946386947> -> 15 (17)\n
+					<:bu4:497643986782257153> -> 15 (17)\n
+					<:bu5:497643988212252675> -> 15 (17)\n
+					<:nobu1:497699521829142537> -> 5\n
+					<:nobu2:497699519346114560> -> 5\n
+					<:nobu3:497699520306479107> -> 5\n
+					<:shinobu:497699520843350026> -> 6\n
+					<:eggy:497675280891248671> -> 3\n
+					<:instanut:497647573247459328> -> 1\n');
+	}
+	
 });
 
 // THIS  MUST  BE  THIS  WAY
