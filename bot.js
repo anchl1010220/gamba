@@ -152,7 +152,9 @@ client.on('message', message => {
 	
 	if (message.content === 'weeb!test'|message.content === 'w!test')
 	{
-		return;
+		// message.reply("DO<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>LIKE<:AYAYA:497706450458509312>WHAT<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>SEE?");
+		
+		message.channel.send(message.author);
 	}
 	
 });
