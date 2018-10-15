@@ -146,15 +146,17 @@ client.on('message', message => {
 	{
 		// lol
 		const channel = message.channel;
-		const msg = message.author.toString();
+		const msg = message.author.id.username;
 		message.channel.send("```css\n📋 Rank | Name\n\n[1]     > #" + msg + "\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
 	}
 	
 	if (message.content === 'weeb!test'|message.content === 'w!test')
 	{
-		if (message.author.id !== '227971175161004033') return;
-		// message.reply("DO<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>LIKE<:AYAYA:497706450458509312>WHAT<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>SEE?");
-		
+		if (message.author.id !== '227971175161004033') {
+			message.reply("DO<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>LIKE<:AYAYA:497706450458509312>WHAT<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>SEE?");
+			return;
+		}
+			
 		message.channel.send(message.author.toString());
 	}
 	
