@@ -146,7 +146,7 @@ client.on('message', message => {
 	{
 		// lol
 		const channel = message.channel;
-		message.channel.send("```css\n📋 Rank | Name\n\n[1]     > <@" + message.author.id + ">\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
+		message.channel.send("```css\n📋 Rank | Name\n\n[1]     > #" + message.author.toString() + "\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
 	}
 	
 });
