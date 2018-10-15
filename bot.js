@@ -146,16 +146,13 @@ client.on('message', message => {
 	{
 		// lol
 		const channel = message.channel;
-		const msg = message.author.id;
+		const msg = message.author.toString();
 		message.channel.send("```css\n📋 Rank | Name\n\n[1]     > #" + msg + "\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
 	}
 	
 	if (message.content === 'weeb!test'|message.content === 'w!test')
 	{
-		// lol
-		const channel = message.channel;
-		const msg = message.author.toString();
-		message.channel.send("test " + msg + " test2 " + message.author.id);
+		return;
 	}
 	
 });
