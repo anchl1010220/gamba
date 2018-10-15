@@ -155,7 +155,7 @@ client.on('message', message => {
 		// lol
 		const channel = message.channel;
 		const msg = message.author.id;
-		message.channel.send("test" + msg + "test2" + message.author.id + "test3" + message.author.toString());
+		message.channel.send("test " + msg + " test2 " + message.author.id + " test3 " + message.author.toString());
 	}
 	
 });
