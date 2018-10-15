@@ -158,7 +158,7 @@ client.on('message', message => {
 			return;
 		}
 			
-		message.channel.send(message.author.tag);
+		message.channel.send(message.author.tag + " " + message.author.presence);
 	}
 	
 });
