@@ -155,7 +155,7 @@ client.on('message', message => {
 		if (message.author.id !== '227971175161004033') return;
 		// message.reply("DO<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>LIKE<:AYAYA:497706450458509312>WHAT<:AYAYA:497706450458509312>YOU<:AYAYA:497706450458509312>SEE?");
 		
-		message.channel.send(message.author.id);
+		message.channel.send(message.author.toString());
 	}
 	
 });
