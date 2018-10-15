@@ -145,6 +145,7 @@ client.on('message', message => {
 	if (message.content === 'weeb!top'|message.content === 'w!top')
 	{
 		// lol
+		const channel = message.channel;
 		message.channel.send(message.author.toString());
 	}
 	
