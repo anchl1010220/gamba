@@ -146,7 +146,7 @@ client.on('message', message => {
 	{
 		// lol
 		const channel = message.channel;
-		message.channel.send(message.author.toString());
+		message.channel.send(message.author.id);
 	}
 	
 });
