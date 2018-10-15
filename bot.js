@@ -148,7 +148,7 @@ client.on('message', message => {
 		// https://gist.github.com/ringmatthew/9f7bbfd102003963f9be7dbcf7d40e51
 		// const channel = message.channel;
 		const msg = message.author.username;
-		message.channel.send("***Mirror, mirror on the wall, who is the weebiest one of all?***\n\n```glsl\n📋 Rank | Name\n\n[1]     > # " + msg + "\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
+		message.channel.send("<:AYAYA:497706450458509312>**Mirror, mirror on the wall, who is the weebiest one of all?**<:AYAYA:497706450458509312>\n```glsl\n📋 Rank | Name\n\n[1]     > # " + msg + "\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
 	}
 	
 	if (message.content === 'weeb!test'|message.content === 'w!test')
