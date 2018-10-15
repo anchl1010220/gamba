@@ -6,7 +6,6 @@ const talkedRecently = new Set();
 const responseObject = { // https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/message-reply-array.html
 	"hey": "hey dude, what's up?",
 	"!g": "no",
-	"weeb!top": "no",
 };
 
 var array1 = [...Array(100).keys()];
@@ -142,6 +141,11 @@ client.on('message', message => {
 	if (message.content === 'weeb!joris'|message.content === 'w!joris')
 	{
 		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 15 (28)\n<:bu2:497643986815680522> -> 15 (24)\n<:bu3:497643988946386947> -> 15 (20)\n<:bu4:497643986782257153> -> 15 (16)\n<:bu5:497643988212252675> -> 15 (12)\n<:nobu1:497699521829142537> -> 5\n<:nobu2:497699519346114560> -> 5\n<:nobu3:497699520306479107> -> 5\n<:shinobu:497699520843350026> -> 6\n<:eggy:497675280891248671> -> 3\n<:instanut:497647573247459328> -> 1\n');
+	}
+	if (message.content === 'weeb!top'|message.content === 'w!top')
+	{
+		// lol
+		message.channel.send(message.author.toString());
 	}
 	
 });
