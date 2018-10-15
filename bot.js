@@ -44,7 +44,7 @@ client.on('message', message => {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === 'w!command'|message.content === 'w!commands') {
-    	message.reply('Try these: **weeb![ gamba | help | list ]**');
+    	message.reply('Try these: **weeb![ gamba | help | list | top ]**');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
@@ -145,6 +145,7 @@ client.on('message', message => {
 	if (message.content === 'weeb!top'|message.content === 'w!top')
 	{
 		// https://discord.js.org/#/docs/main/stable/class/User
+		// https://gist.github.com/ringmatthew/9f7bbfd102003963f9be7dbcf7d40e51
 		// const channel = message.channel;
 		const msg = message.author.username;
 		message.channel.send("```glsl\n📋 Rank | Name\n\n[1]     > # " + msg + "\n            Total Score: 42069\n\n\“Unless you live life for yourself, you won’t even know what happiness is.\”\n- Tosaka Rin, Unlimited Blade Works\n```");
