@@ -44,7 +44,7 @@ client.on('message', message => {
     	message.reply('*SEND HELP* <:buh:445414053850906625> TRY weeb!gamba');
   	}
     if (message.content === 'weeb!command'|message.content === 'weeb!commands'|message.content === 'w!command'|message.content === 'w!commands') {
-    	message.reply('Try these: **weeb![ gamba | help | list | top ]**');
+    	message.reply('Try these: **weeb![ gamba | help | joris | list | top ]**');
   	}
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
