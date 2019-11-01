@@ -110,11 +110,11 @@ client.on('message', message => {
 	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
-            if (rand <= 34) {
+            if (rand <= 49) {
 	            x[i]="<:bu1:497643990758457354>";
-            } else if (35 <= rand && rand <= 64) {
+            } else if (50 <= rand && rand <= 69) {
 	            x[i]="<:bu2:497643986815680522>";
-            } else if (65 <= rand && rand <= 84) {
+            } else if (70 <= rand && rand <= 84) {
 	            x[i]="<:bu3:497643988946386947>";
             } else if (85 <= rand && rand <= 94) {
             	x[i]="<:bu4:497643986782257153>";
@@ -140,7 +140,7 @@ client.on('message', message => {
     	}
 	if (message.content === 'weeb!joris'|message.content === 'w!joris')
 	{
-		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 28 (35)\n<:bu2:497643986815680522> -> 18 (30)\n<:bu3:497643988946386947> -> 12 (20)\n<:bu4:497643986782257153> -> 12 (10)\n<:bu5:497643988212252675> -> 12 (5)\n<:nobu1:497699521829142537> -> 4\n<:nobu2:497699519346114560> -> 4\n<:nobu3:497699520306479107> -> 4\n<:shinobu:497699520843350026> -> 3\n<:eggy:497675280891248671> -> 2\n<:instanut:497647573247459328> -> 1\n');
+		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 28 (50)\n<:bu2:497643986815680522> -> 18 (20)\n<:bu3:497643988946386947> -> 12 (15)\n<:bu4:497643986782257153> -> 12 (10)\n<:bu5:497643988212252675> -> 12 (5)\n<:nobu1:497699521829142537> -> 4\n<:nobu2:497699519346114560> -> 4\n<:nobu3:497699520306479107> -> 4\n<:shinobu:497699520843350026> -> 3\n<:eggy:497675280891248671> -> 2\n<:instanut:497647573247459328> -> 1\n');
 	}
 	if (message.content === 'weeb!top'|message.content === 'w!top')
 	{
