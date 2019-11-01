@@ -61,25 +61,25 @@ client.on('message', message => {
 	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
-            if (rand <= 14) {
+            if (rand <= 27) {
 	            x[i]="<:bu1:497643990758457354>";
-            } else if (15 <= rand && rand <= 29) {
+            } else if (28 <= rand && rand <= 45) {
 	            x[i]="<:bu2:497643986815680522>";
-            } else if (30 <= rand && rand <=44) {
+            } else if (46 <= rand && rand <= 57) {
 	            x[i]="<:bu3:497643988946386947>";
-            } else if (45 <= rand && rand <= 59) {
+            } else if (58 <= rand && rand <= 69) {
             	x[i]="<:bu4:497643986782257153>";
-            } else if (60 <= rand && rand <= 74) {
+            } else if (70 <= rand && rand <= 81) {
 	            x[i]="<:bu5:497643988212252675>";
-            } else if (75 <= rand && rand <= 79) {
+            } else if (82 <= rand && rand <= 85) {
             	x[i]="<:nobu1:497699521829142537>";
-            } else if (80 <= rand && rand <= 84) {
+            } else if (86 <= rand && rand <= 89) {
             	x[i]="<:nobu2:497699519346114560>";
-            } else if (85 <= rand && rand <= 89) {
+            } else if (90 <= rand && rand <= 93) {
             	x[i]="<:nobu3:497699520306479107>";
-            } else if (90 <= rand && rand <= 95) {
+            } else if (94 <= rand && rand <= 96) {
 	            x[i]="<:shinobu:497699520843350026>";
-            } else if (96 <= rand && rand <= 98) {
+            } else if (97 <= rand && rand <= 98) {
             	x[i]="<:instanut:497647573247459328>";
             } else 
             	x[i]="<:eggy:497675280891248671>";
@@ -110,15 +110,15 @@ client.on('message', message => {
 	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
-            if (rand <= 27) {
+            if (rand <= 34) {
 	            x[i]="<:bu1:497643990758457354>";
-            } else if (28 <= rand && rand <= 51) {
+            } else if (35 <= rand && rand <= 64) {
 	            x[i]="<:bu2:497643986815680522>";
-            } else if (52 <= rand && rand <= 71) {
+            } else if (65 <= rand && rand <= 84) {
 	            x[i]="<:bu3:497643988946386947>";
-            } else if (72 <= rand && rand <= 87) {
+            } else if (85 <= rand && rand <= 94) {
             	x[i]="<:bu4:497643986782257153>";
-            } else if (88 <= rand && rand <= 99) {
+            } else if (95 <= rand && rand <= 99) {
 	            x[i]="<:bu5:497643988212252675>";
             } 
 	    }
@@ -136,11 +136,11 @@ client.on('message', message => {
     	
 	    	// command cooldown - https://anidiotsguide_old.gitbooks.io/discord-js-bot-guide/content/examples/misc-examples.html
 		talkedRecently.add(message.author.id);
-		setTimeout(() => { talkedRecently.delete(message.author.id); }, 4000); // 4 sec cd (4000ms)
+		setTimeout(() => { talkedRecently.delete(message.author.id); }, 1000); // 4 sec cd (4000ms)
     	}
 	if (message.content === 'weeb!joris'|message.content === 'w!joris')
 	{
-		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 15 (28)\n<:bu2:497643986815680522> -> 15 (24)\n<:bu3:497643988946386947> -> 15 (20)\n<:bu4:497643986782257153> -> 15 (16)\n<:bu5:497643988212252675> -> 15 (12)\n<:nobu1:497699521829142537> -> 5\n<:nobu2:497699519346114560> -> 5\n<:nobu3:497699520306479107> -> 5\n<:shinobu:497699520843350026> -> 6\n<:eggy:497675280891248671> -> 3\n<:instanut:497647573247459328> -> 1\n');
+		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 28 (35)\n<:bu2:497643986815680522> -> 18 (30)\n<:bu3:497643988946386947> -> 12 (20)\n<:bu4:497643986782257153> -> 12 (10)\n<:bu5:497643988212252675> -> 12 (5)\n<:nobu1:497699521829142537> -> 4\n<:nobu2:497699519346114560> -> 4\n<:nobu3:497699520306479107> -> 4\n<:shinobu:497699520843350026> -> 3\n<:eggy:497675280891248671> -> 2\n<:instanut:497647573247459328> -> 1\n');
 	}
 	if (message.content === 'weeb!top'|message.content === 'w!top')
 	{
