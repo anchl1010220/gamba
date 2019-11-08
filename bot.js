@@ -49,7 +49,8 @@ client.on('message', message => {
     if (message.content === '<:AYAYA:497706450458509312>') {
         // const x = client.emojis.get("497706450458509312");
         // const y = client.emojis.find("name", "ayayay");  
-        message.react("497706450458509312")
+        message.react("497706450458509312");
+	message.react("642242790855802881");
     	}
     if (message.content === 'weeb!gamba'|message.content === 'w!g'|message.content === 'w!gamba') {
         // const user = message.member.id;
