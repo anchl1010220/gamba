@@ -62,25 +62,25 @@ client.on('message', message => {
 	      }
         for (i=0; i<9; i++) {
             rand = array1[Math.floor(Math.random() * array1.length)];
-            if (rand <= 19) {
+            if (rand <= 20) {
 	            x[i]="<:bu1:497643990758457354>";
-            } else if (20 <= rand && rand <= 33) {
+            } else if (21 <= rand && rand <= 34 {
 	            x[i]="<:bu2:497643986815680522>";
-            } else if (34 <= rand && rand <= 47) {
+            } else if (35 <= rand && rand <= 48 {
 	            x[i]="<:bu3:497643988946386947>";
-            } else if (48 <= rand && rand <= 61) {
+            } else if (49 <= rand && rand <= 62 {
             	x[i]="<:bu4:497643986782257153>";
-            } else if (62 <= rand && rand <= 75) {
+            } else if (63 <= rand && rand <= 76) {
 	            x[i]="<:bu5:497643988212252675>";
-            } else if (76 <= rand && rand <= 80) {
+            } else if (77 <= rand && rand <= 81) {
             	x[i]="<:nobu1:497699521829142537>";
-            } else if (81 <= rand && rand <= 85) {
+            } else if (82 <= rand && rand <= 86) {
             	x[i]="<:nobu2:497699519346114560>";
-            } else if (86 <= rand && rand <= 90) {
+            } else if (87 <= rand && rand <= 91) {
             	x[i]="<:nobu3:497699520306479107>";
-            } else if (91 <= rand && rand <= 94) {
+            } else if (92 <= rand && rand <= 96) {
 	            x[i]="<:shinobu:497699520843350026>";
-            } else if (95 <= rand && rand <= 97) {
+            } else if (97 <= rand && rand <= 98) {
             	x[i]="<:instanut:497647573247459328>";
             } else 
             	x[i]="<:eggy:497675280891248671>";
@@ -141,7 +141,7 @@ client.on('message', message => {
     	}
 	if (message.content === 'weeb!joris'|message.content === 'w!joris')
 	{
-		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 20 (50)\n<:bu2:497643986815680522> -> 14 (20)\n<:bu3:497643988946386947> -> 14 (15)\n<:bu4:497643986782257153> -> 14 (10)\n<:bu5:497643988212252675> -> 14 (5)\n<:nobu1:497699521829142537> -> 5\n<:nobu2:497699519346114560> -> 5\n<:nobu3:497699520306479107> -> 5\n<:shinobu:497699520843350026> -> 4\n<:eggy:497675280891248671> -> 3\n<:instanut:497647573247459328> -> 2\n');
+		message.channel.send('**P e r c e n t ? **\n<:bu1:497643990758457354> -> 21 (50)\n<:bu2:497643986815680522> -> 14 (20)\n<:bu3:497643988946386947> -> 14 (15)\n<:bu4:497643986782257153> -> 14 (10)\n<:bu5:497643988212252675> -> 14 (5)\n<:nobu1:497699521829142537> -> 5\n<:nobu2:497699519346114560> -> 5\n<:nobu3:497699520306479107> -> 5\n<:shinobu:497699520843350026> -> 5\n<:eggy:497675280891248671> -> 2\n<:instanut:497647573247459328> -> 1\n');
 	}
 	if (message.content === 'weeb!top'|message.content === 'w!top')
 	{
