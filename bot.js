@@ -64,11 +64,11 @@ client.on('message', message => {
             rand = array1[Math.floor(Math.random() * array1.length)];
             if (rand <= 20) {
 	            x[i]="<:bu1:497643990758457354>";
-            } else if (21 <= rand && rand <= 34 {
+            } else if (21 <= rand && rand <= 34) {
 	            x[i]="<:bu2:497643986815680522>";
-            } else if (35 <= rand && rand <= 48 {
+            } else if (35 <= rand && rand <= 48) {
 	            x[i]="<:bu3:497643988946386947>";
-            } else if (49 <= rand && rand <= 62 {
+            } else if (49 <= rand && rand <= 62) {
             	x[i]="<:bu4:497643986782257153>";
             } else if (63 <= rand && rand <= 76) {
 	            x[i]="<:bu5:497643988212252675>";
